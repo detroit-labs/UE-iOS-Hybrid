@@ -52,14 +52,14 @@ public class HybridPlugin : ModuleRules
 			}
 			);
 
-        if (Target.Platform == UnrealTargetPlatform.IOS) {
-            PublicAdditionalFrameworks.Add(
-                new UEBuildFramework(
-                    "Hybrid",
-                    "../ThirdParty/Hybrid.embeddedframework.zip",
-                    "./Hybrid.bundle"
-                )
-            );
-        }
+		if (Target.Platform == UnrealTargetPlatform.IOS) {
+			PublicAdditionalFrameworks.Add(
+				new UEBuildFramework(
+					"Hybrid",
+					"../ThirdParty/Hybrid.embeddedframework.zip",
+					"./Hybrid.bundle"
+				)
+			);
+		}
 	}
 }
