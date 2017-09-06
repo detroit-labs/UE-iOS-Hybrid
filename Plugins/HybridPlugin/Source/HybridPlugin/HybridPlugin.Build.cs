@@ -57,7 +57,7 @@ public class HybridPlugin : ModuleRules
 				new UEBuildFramework(
 					"Hybrid",
 					"../ThirdParty/Hybrid.embeddedframework.zip",
-					"./Hybrid.bundle"
+					"Hybrid.bundle"
 				)
 			);
 		}
